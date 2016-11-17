@@ -1,0 +1,56 @@
+
+
+#      
+#   DShield.org Recommended Block List 
+#    (c) 2007 DShield.org
+#   some rights reserved. Details http://creativecommons.org/licenses/by-nc-sa/2.5/
+#   use on your own risk. No warranties implied.
+#   primary URL: http://feeds.dshield.org/block.txt
+#     PGP Sign.: http://feeds.dshield.org/block.txt.asc
+#
+#   comments: info@dshield.org
+#    updated: Thu Mar 26 13:57:30 2015 UTC
+#   
+#    This list summarizes the top 20 attacking class C (/24) subnets
+#   over the last three days. The number of 'attacks' indicates the 
+#   number of targets reporting scans from this subnet.
+#
+#
+#    Columns (tab delimited):
+#
+#    (1) start of netblock  
+#    (2) end of netblock
+#    (3) subnet (/24 for class C)
+#    (4) number of targets scanned
+#    (5) name of Network 
+#    (6) Country
+#    (7) contact email address
+#
+#    If a range is assigned to multiple users, the first one is listed. 
+#     
+Start	End	Netblock	Attacks	Name	Country	email
+43.255.191.0	43.255.191.255	24	12518	Japan Inet	JP	admin@v6nic.net
+61.240.144.0	61.240.144.255	24	2985	China United Telecommunications Corporation	CN	ip_address@cnuninet.com
+136.169.122.0	136.169.122.255	24	2043			
+195.154.44.0	195.154.44.255	24	1936	Cable&Wireless France	FR	dponzone@isdnet.net
+183.129.131.0	183.129.131.255	24	1871			
+218.90.147.0	218.90.147.255	24	1484		CN	abuse@jsinfo.net
+122.228.207.0	122.228.207.255	24	1442	CHINANET-BACKBONE No.31,Jin-rong Street	CN	andrewm@123systems.net
+115.239.230.0	115.239.230.255	24	1264	CHINANET-BACKBONE No.31,Jin-rong Street	CN	anti-spam@mail.lsptt.zj.cn
+183.136.216.0	183.136.216.255	24	1238			
+218.77.79.0	218.77.79.255	24	1129		CN	liul@hnpta.net.cn
+115.230.124.0	115.230.124.255	24	1116	CHINANET-BACKBONE No.31,Jin-rong Street	CN	anti-spam@mail.lsptt.zj.cn
+222.186.30.0	222.186.30.255	24	1029			
+104.233.142.0	104.233.142.255	24	1028			
+37.48.83.0	37.48.83.255	24	1022			
+69.197.148.0	69.197.148.255	24	1021	WII-KC - WholeSale Internet	CA	abuse@rogers.com
+87.106.77.0	87.106.77.255	24	1021			
+78.170.135.0	78.170.135.255	24	1021	TEOLTAB TEO LT AB Autonomous System	US	reserved
+78.190.176.0	78.190.176.255	24	1021	TEOLTAB TEO LT AB Autonomous System	US	reserved
+78.173.11.0	78.173.11.255	24	1021	TEOLTAB TEO LT AB Autonomous System	US	reserved
+78.188.71.0	78.188.71.255	24	1021	TEOLTAB TEO LT AB Autonomous System	US	reserved
+#
+#
+# END
+#
+#  finished list generation: Thu Mar 26 13:57:30 2015 UTC

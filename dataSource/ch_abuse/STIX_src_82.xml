@@ -1,0 +1,466 @@
+<stix:STIX_Package 
+	xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
+	xmlns:cybox="http://cybox.mitre.org/cybox-2"
+	xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
+	xmlns:AddressObj="http://cybox.mitre.org/objects#AddressObject-2"
+	xmlns:marking="http://data-marking.mitre.org/Marking-1"
+	xmlns:simpleMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1"
+	xmlns:tlpMarking="http://data-marking.mitre.org/extensions/MarkingStructure#TLP-1"
+	xmlns:TOUMarking="http://data-marking.mitre.org/extensions/MarkingStructure#Terms_Of_Use-1"
+	xmlns:opensource="http://hailataxii.com"
+	xmlns:incident="http://stix.mitre.org/Incident-1"
+	xmlns:indicator="http://stix.mitre.org/Indicator-2"
+	xmlns:ttp="http://stix.mitre.org/TTP-1"
+	xmlns:stixCommon="http://stix.mitre.org/common-1"
+	xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1"
+	xmlns:stix="http://stix.mitre.org/stix-1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+	http://cybox.mitre.org/common-2 http://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd
+	http://cybox.mitre.org/cybox-2 http://cybox.mitre.org/XMLSchema/core/2.1/cybox_core.xsd
+	http://cybox.mitre.org/default_vocabularies-2 http://cybox.mitre.org/XMLSchema/default_vocabularies/2.1/cybox_default_vocabularies.xsd
+	http://cybox.mitre.org/objects#AddressObject-2 http://cybox.mitre.org/XMLSchema/objects/Address/2.1/Address_Object.xsd
+	http://data-marking.mitre.org/Marking-1 http://stix.mitre.org/XMLSchema/data_marking/1.1.1/data_marking.xsd
+	http://data-marking.mitre.org/extensions/MarkingStructure#Simple-1 http://stix.mitre.org/XMLSchema/extensions/marking/simple/1.1.1/simple_marking.xsd
+	http://data-marking.mitre.org/extensions/MarkingStructure#TLP-1 http://stix.mitre.org/XMLSchema/extensions/marking/tlp/1.1.1/tlp_marking.xsd
+	http://data-marking.mitre.org/extensions/MarkingStructure#Terms_Of_Use-1 http://stix.mitre.org/XMLSchema/extensions/marking/terms_of_use/1.0/terms_of_use_marking.xsd
+	http://stix.mitre.org/Incident-1 http://stix.mitre.org/XMLSchema/incident/1.1.1/incident.xsd
+	http://stix.mitre.org/Indicator-2 http://stix.mitre.org/XMLSchema/indicator/2.1.1/indicator.xsd
+	http://stix.mitre.org/TTP-1 http://stix.mitre.org/XMLSchema/ttp/1.1.1/ttp.xsd
+	http://stix.mitre.org/common-1 http://stix.mitre.org/XMLSchema/common/1.1.1/stix_common.xsd
+	http://stix.mitre.org/default_vocabularies-1 http://stix.mitre.org/XMLSchema/default_vocabularies/1.1.1/stix_default_vocabularies.xsd
+	http://stix.mitre.org/stix-1 http://stix.mitre.org/XMLSchema/core/1.1.1/stix_core.xsd" id="opensource:Package-9ff6f6ca-fcc7-4dc4-a14e-b5477841f3d3" version="1.1.1" timestamp="2015-04-30T19:59:59.057684+00:00">
+    <stix:STIX_Header>
+        <stix:Title>Feodo Tracker RSS Feed</stix:Title>
+        <stix:Description><![CDATA[Feodo Tracker RSS Feed. This feed shows the latest twenty Feodo C2 servers which Feodo Tracker has identified.]]></stix:Description>
+        <stix:Handling>
+            <marking:Marking>
+                <marking:Controlled_Structure>//node()</marking:Controlled_Structure>
+                <marking:Marking_Structure xsi:type='simpleMarking:SimpleMarkingStructureType'>
+                    <simpleMarking:Statement>Unclassified (Public)</simpleMarking:Statement>
+                </marking:Marking_Structure>
+                <marking:Marking_Structure xsi:type='TOUMarking:TermsOfUseMarkingStructureType'>
+                    <TOUMarking:Terms_Of_Use>feodotracker.abuse.ch | Abuse source[https://sslbl.abuse.ch/blacklist/] - As for all abuse.ch projects, the use of the SSL Blacklist is free for both commercial and non-commercial usage without any limitation. However, if you are a commercial vendor of security software/services and you want to integrate data from the SSL Blacklist into your products / services, you will have to ask for permission first by contacting me using the contact form [http://www.abuse.ch/?page_id=4727].'
+</TOUMarking:Terms_Of_Use>
+                </marking:Marking_Structure>
+                <marking:Marking_Structure xsi:type='tlpMarking:TLPMarkingStructureType' color="WHITE"/>
+            </marking:Marking>
+        </stix:Handling>
+    </stix:STIX_Header>
+    <stix:Indicators>
+        <stix:Indicator id="opensource:indicator-039326c6-3427-4cb0-a81e-93c39fb1175c" timestamp="2015-04-30T19:59:59.057799+00:00" xsi:type='indicator:IndicatorType' negate="false" version="2.1.1">
+            <indicator:Title>Feodo Tracker:  | This IP address has been identified as malicious by feodotracker.abuse.ch</indicator:Title>
+            <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.1">IP Watchlist</indicator:Type>
+            <indicator:Description><![CDATA[This IP address 91.233.244.105 has been identified as malicious by feodotracker.abuse.ch. For more detailed infomation about this indicator go to [CAUTION!!Read-URL-Before-Click] [https://feodotracker.abuse.ch/host/91.233.244.105].]]></indicator:Description>
+            <indicator:Observable id="opensource:Observable-64ae89b5-2167-4c03-9cc7-581ea898f8af" sighting_count="1">
+                <cybox:Title>IP: 91.233.244.105</cybox:Title>
+                <cybox:Description><![CDATA[IPv4: 91.233.244.105 | isSource: True | ]]></cybox:Description>
+                <cybox:Object id="opensource:Address-32c89276-a16c-4d05-b1e5-cb4e214b6b55">
+                    <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr" is_source="true">
+                        <AddressObj:Address_Value condition="Equals">91.233.244.105</AddressObj:Address_Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Indicated_TTP>
+                <stixCommon:TTP id="opensource:ttp-da3db098-44ec-4a26-9c64-52f5731cff92" timestamp="2015-04-30T19:59:59.058623+00:00" xsi:type='ttp:TTPType' version="1.1.1">
+                    <ttp:Title>Feodo</ttp:Title>
+                    <ttp:Behavior>
+                        <ttp:Malware>
+                            <ttp:Malware_Instance id="opensource:malware-643c243b-d7fe-4a77-8b47-1a7cc297f1ae">
+                                <ttp:Type xsi:type="stixVocabs:MalwareTypeVocab-1.0">Remote Access Trojan</ttp:Type>
+                                <ttp:Name>Cridex</ttp:Name>
+                                <ttp:Name>Bugat</ttp:Name>
+                                <ttp:Name>Dridex</ttp:Name>
+                                <ttp:Description><![CDATA[Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials. At the moment, Feodo Tracker is tracking four versions of Feodo, and they are labeled by Feodo Tracker as version A, version B, version C and version D:
+
+  Version A: Hosted on compromised webservers running an nginx proxy on port 8080 TCP forwarding all botnet traffic to a tier 2 proxy node. Botnet traffic usually directly hits these hosts on port 8080 TCP without using a domain name.
+  Version B: Hosted on servers rented and operated by cybercriminals for the exclusive purpose of hosting a Feodo botnet controller. Usually taking advantage of a domain name within ccTLD .ru. Botnet traffic usually hits these domain names using port 80 TCP.
+  Version C: Successor of Feodo, completely different code. Hosted on the same botnet infrastructure as Version A (compromised webservers, nginx on port 8080 TCP or port 7779 TCP, no domain names) but using a different URL structure. This Version is also known as Geodo.
+  Version D: Successor of Cridex. This version is also known as Dridex
+]]></ttp:Description>
+                                <ttp:Short_Description>Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials</ttp:Short_Description>
+                            </ttp:Malware_Instance>
+                        </ttp:Malware>
+                    </ttp:Behavior>
+                </stixCommon:TTP>
+            </indicator:Indicated_TTP>
+            <indicator:Producer>
+                <stixCommon:Identity id="opensource:Identity-0853288c-b201-4c71-8cd7-9d5569c402f8">
+                    <stixCommon:Name>feodotracker.abuse.ch</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2015-04-27T16:55:34+00:00</cyboxCommon:Produced_Time>
+                    <cyboxCommon:Received_Time>2015-04-30T19:59:59+00:00</cyboxCommon:Received_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="opensource:indicator-2fd6c60b-98b6-4dd1-971c-4bfab38d5373" timestamp="2015-04-30T19:59:59.058712+00:00" xsi:type='indicator:IndicatorType' negate="false" version="2.1.1">
+            <indicator:Title>Feodo Tracker:  | This IP address has been identified as malicious by feodotracker.abuse.ch</indicator:Title>
+            <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.1">IP Watchlist</indicator:Type>
+            <indicator:Description><![CDATA[This IP address 45.55.154.235 has been identified as malicious by feodotracker.abuse.ch. For more detailed infomation about this indicator go to [CAUTION!!Read-URL-Before-Click] [https://feodotracker.abuse.ch/host/45.55.154.235].]]></indicator:Description>
+            <indicator:Observable id="opensource:Observable-00794207-2292-4cea-b9d7-1e8d721cee4a" sighting_count="1">
+                <cybox:Title>IP: 45.55.154.235</cybox:Title>
+                <cybox:Description><![CDATA[IPv4: 45.55.154.235 | isSource: True | ]]></cybox:Description>
+                <cybox:Object id="opensource:Address-3aa27837-85cc-4ea4-846a-9b69627f718a">
+                    <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr" is_source="true">
+                        <AddressObj:Address_Value condition="Equals">45.55.154.235</AddressObj:Address_Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Indicated_TTP>
+                <stixCommon:TTP id="opensource:ttp-35a548cc-9757-4474-bbaa-329babd2825f" timestamp="2015-04-30T19:59:59.059185+00:00" xsi:type='ttp:TTPType' version="1.1.1">
+                    <ttp:Title>Feodo</ttp:Title>
+                    <ttp:Behavior>
+                        <ttp:Malware>
+                            <ttp:Malware_Instance id="opensource:malware-8eaabfcb-ba5a-4d81-ac73-e5e041bb8ba2">
+                                <ttp:Type xsi:type="stixVocabs:MalwareTypeVocab-1.0">Remote Access Trojan</ttp:Type>
+                                <ttp:Name>Cridex</ttp:Name>
+                                <ttp:Name>Bugat</ttp:Name>
+                                <ttp:Name>Dridex</ttp:Name>
+                                <ttp:Description><![CDATA[Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials. At the moment, Feodo Tracker is tracking four versions of Feodo, and they are labeled by Feodo Tracker as version A, version B, version C and version D:
+
+  Version A: Hosted on compromised webservers running an nginx proxy on port 8080 TCP forwarding all botnet traffic to a tier 2 proxy node. Botnet traffic usually directly hits these hosts on port 8080 TCP without using a domain name.
+  Version B: Hosted on servers rented and operated by cybercriminals for the exclusive purpose of hosting a Feodo botnet controller. Usually taking advantage of a domain name within ccTLD .ru. Botnet traffic usually hits these domain names using port 80 TCP.
+  Version C: Successor of Feodo, completely different code. Hosted on the same botnet infrastructure as Version A (compromised webservers, nginx on port 8080 TCP or port 7779 TCP, no domain names) but using a different URL structure. This Version is also known as Geodo.
+  Version D: Successor of Cridex. This version is also known as Dridex
+]]></ttp:Description>
+                                <ttp:Short_Description>Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials</ttp:Short_Description>
+                            </ttp:Malware_Instance>
+                        </ttp:Malware>
+                    </ttp:Behavior>
+                </stixCommon:TTP>
+            </indicator:Indicated_TTP>
+            <indicator:Producer>
+                <stixCommon:Identity id="opensource:Identity-4a71122b-cd3c-43f4-a37c-e2a3df73319e">
+                    <stixCommon:Name>feodotracker.abuse.ch</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2015-04-27T16:55:34+00:00</cyboxCommon:Produced_Time>
+                    <cyboxCommon:Received_Time>2015-04-30T19:59:59+00:00</cyboxCommon:Received_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="opensource:indicator-62b31c13-1dcd-43ed-b778-399d4105ff8b" timestamp="2015-04-30T19:59:59.059251+00:00" xsi:type='indicator:IndicatorType' negate="false" version="2.1.1">
+            <indicator:Title>Feodo Tracker:  | This IP address has been identified as malicious by feodotracker.abuse.ch</indicator:Title>
+            <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.1">IP Watchlist</indicator:Type>
+            <indicator:Description><![CDATA[This IP address 82.112.185.104 has been identified as malicious by feodotracker.abuse.ch. For more detailed infomation about this indicator go to [CAUTION!!Read-URL-Before-Click] [https://feodotracker.abuse.ch/host/82.112.185.104].]]></indicator:Description>
+            <indicator:Observable id="opensource:Observable-7103aa6e-46ca-405c-872c-c11fb2e1a9e9" sighting_count="1">
+                <cybox:Title>IP: 82.112.185.104</cybox:Title>
+                <cybox:Description><![CDATA[IPv4: 82.112.185.104 | isSource: True | ]]></cybox:Description>
+                <cybox:Object id="opensource:Address-6c1c5e65-04fb-4d08-92d9-9d3bc3bdd654">
+                    <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr" is_source="true">
+                        <AddressObj:Address_Value condition="Equals">82.112.185.104</AddressObj:Address_Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Indicated_TTP>
+                <stixCommon:TTP id="opensource:ttp-c315d869-f8e1-402a-b643-4076b6838220" timestamp="2015-04-30T19:59:59.059907+00:00" xsi:type='ttp:TTPType' version="1.1.1">
+                    <ttp:Title>Feodo</ttp:Title>
+                    <ttp:Behavior>
+                        <ttp:Malware>
+                            <ttp:Malware_Instance id="opensource:malware-28831d0b-6bec-4aa9-a06e-e6a077224db9">
+                                <ttp:Type xsi:type="stixVocabs:MalwareTypeVocab-1.0">Remote Access Trojan</ttp:Type>
+                                <ttp:Name>Cridex</ttp:Name>
+                                <ttp:Name>Bugat</ttp:Name>
+                                <ttp:Name>Dridex</ttp:Name>
+                                <ttp:Description><![CDATA[Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials. At the moment, Feodo Tracker is tracking four versions of Feodo, and they are labeled by Feodo Tracker as version A, version B, version C and version D:
+
+  Version A: Hosted on compromised webservers running an nginx proxy on port 8080 TCP forwarding all botnet traffic to a tier 2 proxy node. Botnet traffic usually directly hits these hosts on port 8080 TCP without using a domain name.
+  Version B: Hosted on servers rented and operated by cybercriminals for the exclusive purpose of hosting a Feodo botnet controller. Usually taking advantage of a domain name within ccTLD .ru. Botnet traffic usually hits these domain names using port 80 TCP.
+  Version C: Successor of Feodo, completely different code. Hosted on the same botnet infrastructure as Version A (compromised webservers, nginx on port 8080 TCP or port 7779 TCP, no domain names) but using a different URL structure. This Version is also known as Geodo.
+  Version D: Successor of Cridex. This version is also known as Dridex
+]]></ttp:Description>
+                                <ttp:Short_Description>Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials</ttp:Short_Description>
+                            </ttp:Malware_Instance>
+                        </ttp:Malware>
+                    </ttp:Behavior>
+                </stixCommon:TTP>
+            </indicator:Indicated_TTP>
+            <indicator:Producer>
+                <stixCommon:Identity id="opensource:Identity-6c506ba2-f1de-4604-9927-09a548369fdb">
+                    <stixCommon:Name>feodotracker.abuse.ch</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2015-04-27T16:55:34+00:00</cyboxCommon:Produced_Time>
+                    <cyboxCommon:Received_Time>2015-04-30T19:59:59+00:00</cyboxCommon:Received_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="opensource:indicator-414e0c17-32b2-4c5b-b8b4-4f3eeaafdfcd" timestamp="2015-04-30T19:59:59.059974+00:00" xsi:type='indicator:IndicatorType' negate="false" version="2.1.1">
+            <indicator:Title>Feodo Tracker:  | This IP address has been identified as malicious by feodotracker.abuse.ch</indicator:Title>
+            <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.1">IP Watchlist</indicator:Type>
+            <indicator:Description><![CDATA[This IP address 108.61.189.99 has been identified as malicious by feodotracker.abuse.ch. For more detailed infomation about this indicator go to [CAUTION!!Read-URL-Before-Click] [https://feodotracker.abuse.ch/host/108.61.189.99].]]></indicator:Description>
+            <indicator:Observable id="opensource:Observable-56f3b445-3792-41bf-b716-65395efc2017" sighting_count="1">
+                <cybox:Title>IP: 108.61.189.99</cybox:Title>
+                <cybox:Description><![CDATA[IPv4: 108.61.189.99 | isSource: True | ]]></cybox:Description>
+                <cybox:Object id="opensource:Address-b7701148-2631-4280-9034-ebeb676a923c">
+                    <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr" is_source="true">
+                        <AddressObj:Address_Value condition="Equals">108.61.189.99</AddressObj:Address_Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Indicated_TTP>
+                <stixCommon:TTP id="opensource:ttp-d40cb0df-fe4c-4a6f-91f1-0d7187425f36" timestamp="2015-04-30T19:59:59.060596+00:00" xsi:type='ttp:TTPType' version="1.1.1">
+                    <ttp:Title>Feodo</ttp:Title>
+                    <ttp:Behavior>
+                        <ttp:Malware>
+                            <ttp:Malware_Instance id="opensource:malware-a1e0d7b7-96b9-41df-bd66-6f184d59a971">
+                                <ttp:Type xsi:type="stixVocabs:MalwareTypeVocab-1.0">Remote Access Trojan</ttp:Type>
+                                <ttp:Name>Cridex</ttp:Name>
+                                <ttp:Name>Bugat</ttp:Name>
+                                <ttp:Name>Dridex</ttp:Name>
+                                <ttp:Description><![CDATA[Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials. At the moment, Feodo Tracker is tracking four versions of Feodo, and they are labeled by Feodo Tracker as version A, version B, version C and version D:
+
+  Version A: Hosted on compromised webservers running an nginx proxy on port 8080 TCP forwarding all botnet traffic to a tier 2 proxy node. Botnet traffic usually directly hits these hosts on port 8080 TCP without using a domain name.
+  Version B: Hosted on servers rented and operated by cybercriminals for the exclusive purpose of hosting a Feodo botnet controller. Usually taking advantage of a domain name within ccTLD .ru. Botnet traffic usually hits these domain names using port 80 TCP.
+  Version C: Successor of Feodo, completely different code. Hosted on the same botnet infrastructure as Version A (compromised webservers, nginx on port 8080 TCP or port 7779 TCP, no domain names) but using a different URL structure. This Version is also known as Geodo.
+  Version D: Successor of Cridex. This version is also known as Dridex
+]]></ttp:Description>
+                                <ttp:Short_Description>Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials</ttp:Short_Description>
+                            </ttp:Malware_Instance>
+                        </ttp:Malware>
+                    </ttp:Behavior>
+                </stixCommon:TTP>
+            </indicator:Indicated_TTP>
+            <indicator:Producer>
+                <stixCommon:Identity id="opensource:Identity-b6e15203-22b2-4eef-af96-cf47944ea8e6">
+                    <stixCommon:Name>feodotracker.abuse.ch</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2015-04-25T11:45:25+00:00</cyboxCommon:Produced_Time>
+                    <cyboxCommon:Received_Time>2015-04-30T19:59:59+00:00</cyboxCommon:Received_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="opensource:indicator-384fa166-2cc4-4658-a49d-d4c3ffec11e3" timestamp="2015-04-30T19:59:59.060666+00:00" xsi:type='indicator:IndicatorType' negate="false" version="2.1.1">
+            <indicator:Title>Feodo Tracker:  | This IP address has been identified as malicious by feodotracker.abuse.ch</indicator:Title>
+            <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.1">IP Watchlist</indicator:Type>
+            <indicator:Description><![CDATA[This IP address 184.84.243.224 has been identified as malicious by feodotracker.abuse.ch. For more detailed infomation about this indicator go to [CAUTION!!Read-URL-Before-Click] [https://feodotracker.abuse.ch/host/184.84.243.224].]]></indicator:Description>
+            <indicator:Observable id="opensource:Observable-fde28215-c155-4350-b222-c137dd0e69be" sighting_count="1">
+                <cybox:Title>IP: 184.84.243.224</cybox:Title>
+                <cybox:Description><![CDATA[IPv4: 184.84.243.224 | isSource: True | ]]></cybox:Description>
+                <cybox:Object id="opensource:Address-15954d81-147b-4df3-8992-f5f51443c293">
+                    <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr" is_source="true">
+                        <AddressObj:Address_Value condition="Equals">184.84.243.224</AddressObj:Address_Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Indicated_TTP>
+                <stixCommon:TTP id="opensource:ttp-29b6c181-aebe-4415-9c35-2bb098b3a934" timestamp="2015-04-30T19:59:59.061198+00:00" xsi:type='ttp:TTPType' version="1.1.1">
+                    <ttp:Title>Feodo</ttp:Title>
+                    <ttp:Behavior>
+                        <ttp:Malware>
+                            <ttp:Malware_Instance id="opensource:malware-05fec262-e5a5-457f-8ffa-e3b5bb83125f">
+                                <ttp:Type xsi:type="stixVocabs:MalwareTypeVocab-1.0">Remote Access Trojan</ttp:Type>
+                                <ttp:Name>Cridex</ttp:Name>
+                                <ttp:Name>Bugat</ttp:Name>
+                                <ttp:Name>Dridex</ttp:Name>
+                                <ttp:Description><![CDATA[Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials. At the moment, Feodo Tracker is tracking four versions of Feodo, and they are labeled by Feodo Tracker as version A, version B, version C and version D:
+
+  Version A: Hosted on compromised webservers running an nginx proxy on port 8080 TCP forwarding all botnet traffic to a tier 2 proxy node. Botnet traffic usually directly hits these hosts on port 8080 TCP without using a domain name.
+  Version B: Hosted on servers rented and operated by cybercriminals for the exclusive purpose of hosting a Feodo botnet controller. Usually taking advantage of a domain name within ccTLD .ru. Botnet traffic usually hits these domain names using port 80 TCP.
+  Version C: Successor of Feodo, completely different code. Hosted on the same botnet infrastructure as Version A (compromised webservers, nginx on port 8080 TCP or port 7779 TCP, no domain names) but using a different URL structure. This Version is also known as Geodo.
+  Version D: Successor of Cridex. This version is also known as Dridex
+]]></ttp:Description>
+                                <ttp:Short_Description>Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials</ttp:Short_Description>
+                            </ttp:Malware_Instance>
+                        </ttp:Malware>
+                    </ttp:Behavior>
+                </stixCommon:TTP>
+            </indicator:Indicated_TTP>
+            <indicator:Producer>
+                <stixCommon:Identity id="opensource:Identity-b356345f-e990-4156-8b88-0da261a54f80">
+                    <stixCommon:Name>feodotracker.abuse.ch</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2015-02-05T10:51:48+00:00</cyboxCommon:Produced_Time>
+                    <cyboxCommon:Received_Time>2015-04-30T19:59:59+00:00</cyboxCommon:Received_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="opensource:indicator-c4be4ebe-2b0f-47aa-aa4d-bcddb975c35b" timestamp="2015-04-30T19:59:59.061265+00:00" xsi:type='indicator:IndicatorType' negate="false" version="2.1.1">
+            <indicator:Title>Feodo Tracker:  | This IP address has been identified as malicious by feodotracker.abuse.ch</indicator:Title>
+            <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.1">IP Watchlist</indicator:Type>
+            <indicator:Description><![CDATA[This IP address 208.69.59.61 has been identified as malicious by feodotracker.abuse.ch. For more detailed infomation about this indicator go to [CAUTION!!Read-URL-Before-Click] [https://feodotracker.abuse.ch/host/208.69.59.61].]]></indicator:Description>
+            <indicator:Observable id="opensource:Observable-429160b4-1be3-4189-ad90-b9e36e6acdc6" sighting_count="1">
+                <cybox:Title>IP: 208.69.59.61</cybox:Title>
+                <cybox:Description><![CDATA[IPv4: 208.69.59.61 | isSource: True | ]]></cybox:Description>
+                <cybox:Object id="opensource:Address-c5bd30d9-36f2-4904-b729-3edfcd855ecb">
+                    <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr" is_source="true">
+                        <AddressObj:Address_Value condition="Equals">208.69.59.61</AddressObj:Address_Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Indicated_TTP>
+                <stixCommon:TTP id="opensource:ttp-baca90f9-dd92-4311-a35c-488622e8e073" timestamp="2015-04-30T19:59:59.061760+00:00" xsi:type='ttp:TTPType' version="1.1.1">
+                    <ttp:Title>Feodo</ttp:Title>
+                    <ttp:Behavior>
+                        <ttp:Malware>
+                            <ttp:Malware_Instance id="opensource:malware-4ade05b6-81af-4093-a962-930653110ec8">
+                                <ttp:Type xsi:type="stixVocabs:MalwareTypeVocab-1.0">Remote Access Trojan</ttp:Type>
+                                <ttp:Name>Cridex</ttp:Name>
+                                <ttp:Name>Bugat</ttp:Name>
+                                <ttp:Name>Dridex</ttp:Name>
+                                <ttp:Description><![CDATA[Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials. At the moment, Feodo Tracker is tracking four versions of Feodo, and they are labeled by Feodo Tracker as version A, version B, version C and version D:
+
+  Version A: Hosted on compromised webservers running an nginx proxy on port 8080 TCP forwarding all botnet traffic to a tier 2 proxy node. Botnet traffic usually directly hits these hosts on port 8080 TCP without using a domain name.
+  Version B: Hosted on servers rented and operated by cybercriminals for the exclusive purpose of hosting a Feodo botnet controller. Usually taking advantage of a domain name within ccTLD .ru. Botnet traffic usually hits these domain names using port 80 TCP.
+  Version C: Successor of Feodo, completely different code. Hosted on the same botnet infrastructure as Version A (compromised webservers, nginx on port 8080 TCP or port 7779 TCP, no domain names) but using a different URL structure. This Version is also known as Geodo.
+  Version D: Successor of Cridex. This version is also known as Dridex
+]]></ttp:Description>
+                                <ttp:Short_Description>Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials</ttp:Short_Description>
+                            </ttp:Malware_Instance>
+                        </ttp:Malware>
+                    </ttp:Behavior>
+                </stixCommon:TTP>
+            </indicator:Indicated_TTP>
+            <indicator:Producer>
+                <stixCommon:Identity id="opensource:Identity-5103d1bb-3450-4788-aa94-5d1d36089297">
+                    <stixCommon:Name>feodotracker.abuse.ch</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2015-04-28T21:47:55+00:00</cyboxCommon:Produced_Time>
+                    <cyboxCommon:Received_Time>2015-04-30T19:59:59+00:00</cyboxCommon:Received_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="opensource:indicator-91e9aea5-7590-44e4-94d4-f873a8ef4644" timestamp="2015-04-30T19:59:59.062934+00:00" xsi:type='indicator:IndicatorType' negate="false" version="2.1.1">
+            <indicator:Title>Feodo Tracker:  | This IP address has been identified as malicious by feodotracker.abuse.ch</indicator:Title>
+            <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.1">IP Watchlist</indicator:Type>
+            <indicator:Description><![CDATA[This IP address 31.149.246.121 has been identified as malicious by feodotracker.abuse.ch. For more detailed infomation about this indicator go to [CAUTION!!Read-URL-Before-Click] [https://feodotracker.abuse.ch/host/31.149.246.121].]]></indicator:Description>
+            <indicator:Observable id="opensource:Observable-dc578546-1094-4874-bfc7-91cf0a4e44ea" sighting_count="1">
+                <cybox:Title>IP: 31.149.246.121</cybox:Title>
+                <cybox:Description><![CDATA[IPv4: 31.149.246.121 | isSource: True | ]]></cybox:Description>
+                <cybox:Object id="opensource:Address-117c3cd7-d46f-44be-9e2c-ca803d7236b8">
+                    <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr" is_source="true">
+                        <AddressObj:Address_Value condition="Equals">31.149.246.121</AddressObj:Address_Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Indicated_TTP>
+                <stixCommon:TTP id="opensource:ttp-50343964-a1de-4fba-bafd-ff854985aac6" timestamp="2015-04-30T19:59:59.063568+00:00" xsi:type='ttp:TTPType' version="1.1.1">
+                    <ttp:Title>Feodo</ttp:Title>
+                    <ttp:Behavior>
+                        <ttp:Malware>
+                            <ttp:Malware_Instance id="opensource:malware-c3081191-f5ae-479d-929b-24515439e6ae">
+                                <ttp:Type xsi:type="stixVocabs:MalwareTypeVocab-1.0">Remote Access Trojan</ttp:Type>
+                                <ttp:Name>Cridex</ttp:Name>
+                                <ttp:Name>Bugat</ttp:Name>
+                                <ttp:Name>Dridex</ttp:Name>
+                                <ttp:Description><![CDATA[Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials. At the moment, Feodo Tracker is tracking four versions of Feodo, and they are labeled by Feodo Tracker as version A, version B, version C and version D:
+
+  Version A: Hosted on compromised webservers running an nginx proxy on port 8080 TCP forwarding all botnet traffic to a tier 2 proxy node. Botnet traffic usually directly hits these hosts on port 8080 TCP without using a domain name.
+  Version B: Hosted on servers rented and operated by cybercriminals for the exclusive purpose of hosting a Feodo botnet controller. Usually taking advantage of a domain name within ccTLD .ru. Botnet traffic usually hits these domain names using port 80 TCP.
+  Version C: Successor of Feodo, completely different code. Hosted on the same botnet infrastructure as Version A (compromised webservers, nginx on port 8080 TCP or port 7779 TCP, no domain names) but using a different URL structure. This Version is also known as Geodo.
+  Version D: Successor of Cridex. This version is also known as Dridex
+]]></ttp:Description>
+                                <ttp:Short_Description>Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials</ttp:Short_Description>
+                            </ttp:Malware_Instance>
+                        </ttp:Malware>
+                    </ttp:Behavior>
+                </stixCommon:TTP>
+            </indicator:Indicated_TTP>
+            <indicator:Producer>
+                <stixCommon:Identity id="opensource:Identity-221a16e7-ff4f-4e82-92eb-6b2a0910a07e">
+                    <stixCommon:Name>feodotracker.abuse.ch</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2015-04-17T19:00:10+00:00</cyboxCommon:Produced_Time>
+                    <cyboxCommon:Received_Time>2015-04-30T19:59:59+00:00</cyboxCommon:Received_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="opensource:indicator-cb6913f8-1a78-4007-ae49-2e7da3595064" timestamp="2015-04-30T19:59:59.063644+00:00" xsi:type='indicator:IndicatorType' negate="false" version="2.1.1">
+            <indicator:Title>Feodo Tracker:  | This IP address has been identified as malicious by feodotracker.abuse.ch</indicator:Title>
+            <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.1">IP Watchlist</indicator:Type>
+            <indicator:Description><![CDATA[This IP address 5.178.43.35 has been identified as malicious by feodotracker.abuse.ch. For more detailed infomation about this indicator go to [CAUTION!!Read-URL-Before-Click] [https://feodotracker.abuse.ch/host/5.178.43.35].]]></indicator:Description>
+            <indicator:Observable id="opensource:Observable-3cd966fd-f7f0-4c6e-96e1-f68159bf1ff5" sighting_count="1">
+                <cybox:Title>IP: 5.178.43.35</cybox:Title>
+                <cybox:Description><![CDATA[IPv4: 5.178.43.35 | isSource: True | ]]></cybox:Description>
+                <cybox:Object id="opensource:Address-f2e6c4f8-8d77-463b-aaa0-4b53103dfa6b">
+                    <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr" is_source="true">
+                        <AddressObj:Address_Value condition="Equals">5.178.43.35</AddressObj:Address_Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Indicated_TTP>
+                <stixCommon:TTP id="opensource:ttp-60072945-9049-4a4f-a4ae-78ddda6c5307" timestamp="2015-04-30T19:59:59.064127+00:00" xsi:type='ttp:TTPType' version="1.1.1">
+                    <ttp:Title>Feodo</ttp:Title>
+                    <ttp:Behavior>
+                        <ttp:Malware>
+                            <ttp:Malware_Instance id="opensource:malware-f609f368-c050-4f0c-9efa-693e615386c2">
+                                <ttp:Type xsi:type="stixVocabs:MalwareTypeVocab-1.0">Remote Access Trojan</ttp:Type>
+                                <ttp:Name>Cridex</ttp:Name>
+                                <ttp:Name>Bugat</ttp:Name>
+                                <ttp:Name>Dridex</ttp:Name>
+                                <ttp:Description><![CDATA[Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials. At the moment, Feodo Tracker is tracking four versions of Feodo, and they are labeled by Feodo Tracker as version A, version B, version C and version D:
+
+  Version A: Hosted on compromised webservers running an nginx proxy on port 8080 TCP forwarding all botnet traffic to a tier 2 proxy node. Botnet traffic usually directly hits these hosts on port 8080 TCP without using a domain name.
+  Version B: Hosted on servers rented and operated by cybercriminals for the exclusive purpose of hosting a Feodo botnet controller. Usually taking advantage of a domain name within ccTLD .ru. Botnet traffic usually hits these domain names using port 80 TCP.
+  Version C: Successor of Feodo, completely different code. Hosted on the same botnet infrastructure as Version A (compromised webservers, nginx on port 8080 TCP or port 7779 TCP, no domain names) but using a different URL structure. This Version is also known as Geodo.
+  Version D: Successor of Cridex. This version is also known as Dridex
+]]></ttp:Description>
+                                <ttp:Short_Description>Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials</ttp:Short_Description>
+                            </ttp:Malware_Instance>
+                        </ttp:Malware>
+                    </ttp:Behavior>
+                </stixCommon:TTP>
+            </indicator:Indicated_TTP>
+            <indicator:Producer>
+                <stixCommon:Identity id="opensource:Identity-61207dba-2b0e-4756-a8f6-594bcab0864d">
+                    <stixCommon:Name>feodotracker.abuse.ch</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2015-02-16T14:11:42+00:00</cyboxCommon:Produced_Time>
+                    <cyboxCommon:Received_Time>2015-04-30T19:59:59+00:00</cyboxCommon:Received_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+        <stix:Indicator id="opensource:indicator-49eeadbf-e503-4240-8c86-bc672bee7f27" timestamp="2015-04-30T19:59:59.064193+00:00" xsi:type='indicator:IndicatorType' negate="false" version="2.1.1">
+            <indicator:Title>Feodo Tracker:  | This IP address has been identified as malicious by feodotracker.abuse.ch</indicator:Title>
+            <indicator:Type xsi:type="stixVocabs:IndicatorTypeVocab-1.1">IP Watchlist</indicator:Type>
+            <indicator:Description><![CDATA[This IP address 200.159.128.11 has been identified as malicious by feodotracker.abuse.ch. For more detailed infomation about this indicator go to [CAUTION!!Read-URL-Before-Click] [https://feodotracker.abuse.ch/host/200.159.128.11].]]></indicator:Description>
+            <indicator:Observable id="opensource:Observable-fddc8198-8a97-4391-a4ae-d691a91db88c" sighting_count="1">
+                <cybox:Title>IP: 200.159.128.11</cybox:Title>
+                <cybox:Description><![CDATA[IPv4: 200.159.128.11 | isSource: True | ]]></cybox:Description>
+                <cybox:Object id="opensource:Address-fffa81f4-5e25-4a04-9203-01208f02a8b6">
+                    <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr" is_source="true">
+                        <AddressObj:Address_Value condition="Equals">200.159.128.11</AddressObj:Address_Value>
+                    </cybox:Properties>
+                </cybox:Object>
+            </indicator:Observable>
+            <indicator:Indicated_TTP>
+                <stixCommon:TTP id="opensource:ttp-52c4b702-ab59-45f5-8789-9dca1a6ea963" timestamp="2015-04-30T19:59:59.064751+00:00" xsi:type='ttp:TTPType' version="1.1.1">
+                    <ttp:Title>Feodo</ttp:Title>
+                    <ttp:Behavior>
+                        <ttp:Malware>
+                            <ttp:Malware_Instance id="opensource:malware-037a8077-aac4-4df7-860b-ab6e751d3186">
+                                <ttp:Type xsi:type="stixVocabs:MalwareTypeVocab-1.0">Remote Access Trojan</ttp:Type>
+                                <ttp:Name>Cridex</ttp:Name>
+                                <ttp:Name>Bugat</ttp:Name>
+                                <ttp:Name>Dridex</ttp:Name>
+                                <ttp:Description><![CDATA[Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials. At the moment, Feodo Tracker is tracking four versions of Feodo, and they are labeled by Feodo Tracker as version A, version B, version C and version D:
+
+  Version A: Hosted on compromised webservers running an nginx proxy on port 8080 TCP forwarding all botnet traffic to a tier 2 proxy node. Botnet traffic usually directly hits these hosts on port 8080 TCP without using a domain name.
+  Version B: Hosted on servers rented and operated by cybercriminals for the exclusive purpose of hosting a Feodo botnet controller. Usually taking advantage of a domain name within ccTLD .ru. Botnet traffic usually hits these domain names using port 80 TCP.
+  Version C: Successor of Feodo, completely different code. Hosted on the same botnet infrastructure as Version A (compromised webservers, nginx on port 8080 TCP or port 7779 TCP, no domain names) but using a different URL structure. This Version is also known as Geodo.
+  Version D: Successor of Cridex. This version is also known as Dridex
+]]></ttp:Description>
+                                <ttp:Short_Description>Feodo (also known as Cridex or Bugat) is a Trojan used to commit ebanking fraud and steal sensitive information from the victims computer, such as credit card details or credentials</ttp:Short_Description>
+                            </ttp:Malware_Instance>
+                        </ttp:Malware>
+                    </ttp:Behavior>
+                </stixCommon:TTP>
+            </indicator:Indicated_TTP>
+            <indicator:Producer>
+                <stixCommon:Identity id="opensource:Identity-24d93bb3-de3f-4652-8e3e-be014c8a5bb9">
+                    <stixCommon:Name>feodotracker.abuse.ch</stixCommon:Name>
+                </stixCommon:Identity>
+                <stixCommon:Time>
+                    <cyboxCommon:Produced_Time>2015-04-28T21:47:55+00:00</cyboxCommon:Produced_Time>
+                    <cyboxCommon:Received_Time>2015-04-30T19:59:59+00:00</cyboxCommon:Received_Time>
+                </stixCommon:Time>
+            </indicator:Producer>
+        </stix:Indicator>
+    </stix:Indicators>
+</stix:STIX_Package>

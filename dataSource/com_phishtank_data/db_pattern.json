@@ -1,0 +1,14 @@
+{
+    "source": {
+        "name": "data.phishtank.com",
+        "stix.extensions.marking.simple_marking.SimpleMarkingStructure.statement":"Unclassified (Public)",
+        "stix.extensions.marking.tlp.TLPMarkingStructure.color":"WHITE",
+        "stix.ttp.attack_pattern.AttackPattern.title":"URL embedded in Email",
+        "stix.ttp.TTP.intended_effects": ["Theft - Credential Theft"],
+        "stix.core.stix_header.STIXHeader.title":"PhishEmail URL",
+        "stix.core.stix_header.STIXHeader.description":"List of emmbed URI found in suspected Phishing Emails",
+        "stix.core.stix_header.STIXHeader.package_intents":[],
+        "stix.core.stix_header.STIXHeader.profiles":[]
+    },
+    "data": {}
+}

@@ -1,0 +1,5 @@
+http://torstatus.blutmagie.de - HailATaxii.com (HAT) has made a 'best effort' attempt to find/determined the TOU (Term of Use) for this site's data, however none was found. 
+
+- HAT assumes that attribution is a minimum requirement.
+- HAT assumes this data was created and owned by torstatus.blutmagie.de.
+- HAT has only modified the format of the data from CSV to STIX, and has not made any changes to the contains of the data as it was received at the time of conversion.
